@@ -42,6 +42,9 @@ body {
     font-family: 'Koulen', cursive;
 
 }
+html{
+    overflow-x: hidden;
+}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -145,6 +148,9 @@ nav {
 }
 
 @media screen and (max-width:760px) {
+    body{
+        overflow-x: hidden;
+    }
     .nav-links {
         position: absolute;
         right: 0px;
