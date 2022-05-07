@@ -1,12 +1,4 @@
-<?php 
-session_start();
 
-	include("connection.php");
-	include("functions.php");
-
-	$user_data = check_login($con);
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,12 +22,12 @@ session_start();
 				<img class="logo" src="./map.jpeg" alt="" style="width:25px" margin-left:-10px;>
 			</div>
             <ul class="nav-links">
-            <li> <a href="/livecc/">HOME <i class="fas fa-home"></i></a> </li>
-				<li> <a href="/livecc/newcc.php"> LIVE CC <i class="fas fa-credit-card"></i></a> </li>
-				<li> <a href="/livecc/newcashapp.php"> CASHAPP LOGS <i class="fas fa-dollar-circle"></i></a> </li>
-                <li> <a href="/livecc/newpaypal.php"> PAYPAL LOGS</a> </li>
-                <li> <a href="/livecc/fullz.php"> FULLZ</a> </li>
-            </ul>
+				<li> <a href="./index.html">HOME <i class="fas fa-home"></i></a> </li>
+				<li> <a href="./newcc.html"> LIVE CC <i class="fas fa-credit-card"></i></a> </li>
+				<li> <a href="./newcashapp.html"> CASHAPP LOGS <i class="fas fa-dollar-circle"></i></a> </li>
+				<li> <a href="./newpaypal.html"> PAYPAL LOGS</a> </li>
+				<li> <a href="./fullz.html"> FULLZ</a> </li>
+			</ul>
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -75,7 +67,7 @@ session_start();
                         <td>150 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
 
@@ -86,7 +78,7 @@ session_start();
                         <td>200 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -96,7 +88,7 @@ session_start();
                         <td>300 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -106,7 +98,7 @@ session_start();
                         <td>230 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -116,7 +108,7 @@ session_start();
                         <td>1000 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -126,7 +118,7 @@ session_start();
                         <td>130 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
 
@@ -137,7 +129,7 @@ session_start();
                         <td>250 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -147,7 +139,7 @@ session_start();
                         <td>340 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -157,7 +149,7 @@ session_start();
                         <td>450 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -167,7 +159,7 @@ session_start();
                         <td>1500 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
 
@@ -178,7 +170,7 @@ session_start();
                         <td>UK Fullz
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
 
@@ -189,7 +181,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -199,7 +191,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -209,7 +201,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -219,7 +211,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -229,7 +221,7 @@ session_start();
                         <td>100 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
 
@@ -240,7 +232,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -250,7 +242,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -260,7 +252,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
                     <tr>
@@ -270,7 +262,7 @@ session_start();
                         <td>50 USD
                         </td>
 
-                        <td class="text-center">  <a href="/livecc/cart.php"><button class="btn btn-outline-primary">BUY
+                        <td class="text-center">  <a href="./cart.html"><button class="btn btn-outline-primary">BUY
                                     NOW</button></a>  </td></td>
                     </tr>
 
