@@ -1,0 +1,447 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>live cc</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <header>
+        <nav class="parent">
+        <div>
+				<img class="logo" src="./map.jpeg" alt="" style="width:25px" margin-left:-10px;>
+			</div>
+            <ul class="nav-links">
+            <li> <a href="/livecc/">HOME <i class="fas fa-home"></i></a> </li>
+				<li> <a href="/livecc/newcc.php"> LIVE CC <i class="fas fa-credit-card"></i></a> </li>
+				<li> <a href="/livecc/newcashapp.php"> CASHAPP LOGS <i class="fas fa-dollar-circle"></i></a> </li>
+                <li> <a href="/livecc/newpaypal.php"> PAYPAL LOGS</a> </li>
+                <li> <a href="/livecc/fullz.php"> FULLZ</a> </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+
+    </header>
+</head>
+
+<body>
+    < <div class="container-fluid ">
+
+        <table class="table table-hover table-dark table-striped   table-bordered">
+            <thead class=".thead-dark">
+                <tr>
+                <tr role="row">
+                    <th class="dt-center sorting_asc" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1"
+                        aria-label=" ID: activate to sort column descending" aria-sort="ascending">ID
+                    </th>
+                    <th class="dt-center sorting" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1"
+                        ria-label="Country: activate to sort column ascending">Country
+                    </th>
+                    <th class="dt-center sorting" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1"
+                        ria-label="BIN: activate to sort column ascending">BIN</th>
+
+                    <th class="dt-center sorting" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1"
+                        ria-label="Zip Code: activate to sort column ascending">Zip Code
+                    </th>
+                    <th class="dt-center sorting" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1"
+                        ria-label="Update: activate to sort column ascending">Update</th>
+
+                    <th class="dt-center sorting" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1"
+                        ;aria-label="Price: activate to sort column ascending">Price</th>
+                    <th class="dt-center sorting" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1" ;
+                        aria-label="Bank: activate to sort column ascending">Bank</th>
+                    <th class="dt-center sorting" tabindex="0" aria-controls="BoobsTable" rowspan="1" colspan="1"
+                        ;aria-label="Checker: activate to sort column ascending">Checker
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr role="row" class="odd  table">
+                    <td class=" sorting_1" tabindex="0">11102</td>
+                    <td class=" dt-center"><img style="width:35px" src="./Brazil.png">
+                        <br><small>BRAZIL<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">457631</td>
+                    <td class=" dt-center">06/23</td>
+                    <td class=" dt-center">89066</td>
+
+
+                    <td class=" dt-center">$100</td>
+                    <td class=" dt-center">BANCO DO BRASIL, S.A.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11102"
+                            onclick="checkthiscc(11102);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+
+
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11103</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">441920</td>
+                    <td class=" dt-center">04/24</td>
+                    <td class=" dt-center">90017</td>
+
+
+                    <td class=" dt-center">$100</td>
+                    <td class=" dt-center">GERMAN AMERICAN BANCORP</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11103"
+                            onclick="checkthiscc(11103);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11105</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">460194</td>
+                    <td class=" dt-center">08/23</td>
+                    <td class=" dt-center">33157</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">PICATINNY F.C.U.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11105"
+                            onclick="checkthiscc(11105);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11106</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">449716</td>
+                    <td class=" dt-center">05/23</td>
+                    <td class=" dt-center">26378</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">ICBA BANCARD</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11106"
+                            onclick="checkthiscc(11106);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11107</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">430155</td>
+                    <td class=" dt-center">12/24</td>
+                    <td class=" dt-center">64134</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">WILLIAMSPORT NATIONAL BANK</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11107"
+                            onclick="checkthiscc(11107);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11108</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">407105</td>
+                    <td class=" dt-center">02/24</td>
+                    <td class=" dt-center">10033</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">HSBC BANK USA, N.A.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11108"
+                            onclick="checkthiscc(11108);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11109</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">472507</td>
+                    <td class=" dt-center">04/25</td>
+                    <td class=" dt-center">33566</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">U.S. BANK, N.A.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11109"
+                            onclick="checkthiscc(11109);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11110</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">648986</td>
+                    <td class=" dt-center">05/23</td>
+                    <td class=" dt-center">33905</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">DISCOVER BANK </td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11110"
+                            onclick="checkthiscc(11110);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11112</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">526224</td>
+                    <td class=" dt-center">01/24</td>
+                    <td class=" dt-center">70112</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">CITIBANK </td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11112"
+                            onclick="checkthiscc(11112);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11113</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">403294</td>
+                    <td class=" dt-center">03/24</td>
+                    <td class=" dt-center">48226</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">META BANK</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11113"
+                            onclick="checkthiscc(11113);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11102</td>
+                    <td class=" dt-center"><img style="width:35px" src="./Brazil.png">
+                        <br><small>BRAZIL<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">457631</td>
+                    <td class=" dt-center">06/23</td>
+                    <td class=" dt-center">89066</td>
+
+
+                    <td class=" dt-center">$100</td>
+                    <td class=" dt-center">BANCO DO BRASIL, S.A.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11102"
+                            onclick="checkthiscc(11102);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+
+
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11103</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">441920</td>
+                    <td class=" dt-center">04/24</td>
+                    <td class=" dt-center">90017</td>
+
+
+                    <td class=" dt-center">$100</td>
+                    <td class=" dt-center">GERMAN AMERICAN BANCORP</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11103"
+                            onclick="checkthiscc(11103);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11105</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">460194</td>
+                    <td class=" dt-center">08/23</td>
+                    <td class=" dt-center">33157</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">PICATINNY F.C.U.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11105"
+                            onclick="checkthiscc(11105);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11106</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">449716</td>
+                    <td class=" dt-center">05/23</td>
+                    <td class=" dt-center">26378</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">ICBA BANCARD</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11106"
+                            onclick="checkthiscc(11106);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11107</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">430155</td>
+                    <td class=" dt-center">12/24</td>
+                    <td class=" dt-center">64134</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">WILLIAMSPORT NATIONAL BANK</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11107"
+                            onclick="checkthiscc(11107);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11108</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">407105</td>
+                    <td class=" dt-center">02/24</td>
+                    <td class=" dt-center">10033</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">HSBC BANK USA, N.A.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11108"
+                            onclick="checkthiscc(11108);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11109</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">472507</td>
+                    <td class=" dt-center">04/25</td>
+                    <td class=" dt-center">33566</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">U.S. BANK, N.A.</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11109"
+                            onclick="checkthiscc(11109);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11110</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">648986</td>
+                    <td class=" dt-center">05/23</td>
+                    <td class=" dt-center">33905</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">DISCOVER BANK </td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11110"
+                            onclick="checkthiscc(11110);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="odd  ">
+                    <td class="dt-center sorting_1" tabindex="0">11112</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">526224</td>
+                    <td class=" dt-center">01/24</td>
+                    <td class=" dt-center">70112</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">CITIBANK </td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11112"
+                            onclick="checkthiscc(11112);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+                <tr role="row" class="even                ">
+                    <td class="dt-center sorting_1" tabindex="0">11113</td>
+                    <td class=" dt-center"><img style="width:35px" src="./United_States.png">
+                        <br><small>UNITED STATES<br><small></small></small>
+                    </td>
+                    <td class=" dt-center">403294</td>
+                    <td class=" dt-center">03/24</td>
+                    <td class=" dt-center">48226</td>
+
+
+                    <td class=" dt-center">$50</td>
+                    <td class=" dt-center">META BANK</td>
+                    <td class=" dt-center"><button id="buythis" type="button" class="btn btn-primary" data-id="11113"
+                            onclick="checkthiscc(11113);">
+                            <a href="./cart.html" style="color: white;">BUY NOW</a> </button></td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <!------genral body wraps starts--------------->
+
+    <script>
+
+        $(document).ready(function () {
+            $('.menu-btn').click(function () {
+                ('.nav-list').addClass('active')
+            })
+
+        })
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

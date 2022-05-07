@@ -1,0 +1,633 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <header>
+        <nav class="parent ">
+        <div>
+				<img class="logo" src="./map.jpeg" alt="" style="width:25px" margin-left:-10px;>
+			</div>
+            <ul class="nav-links">
+            <li> <a href="/livecc/">HOME <i class="fas fa-home"></i></a> </li>
+				<li> <a href="/livecc/newcc.php"> LIVE CC <i class="fas fa-credit-card"></i></a> </li>
+				<li> <a href="/livecc/newcashapp.php"> CASHAPP LOGS <i class="fas fa-dollar-circle"></i></a> </li>
+                <li> <a href="/livecc/newpaypal.php"> PAYPAL LOGS</a> </li>
+                <li> <a href="/livecc/fullz.php"> FULLZ</a> </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+        </nav>
+
+    </header>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+
+        <table class="table table-hover table-striped   table-bordered table-dark">
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Logs Name</th>
+
+                        <th>Includes</th>
+                        <th>Balance</th>
+                        <th>Price</th>
+                        <th>Status</th>
+                        <th>Buy Now</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$3,024.17</td>
+                        <td>179$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9b962766fe1cdca7d477c4" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$3,378.21</td>
+                        <td>215$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9baab8b7e30d074d131c12" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$3,411.77</td>
+                        <td>241$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9bb15b6280110b73a8a9d6" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$3,501.32</td>
+                        <td>252$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c0dd89b78a03b680ca685" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$3,564.23</td>
+                        <td>269$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c4f1001fd78cba5bd4801" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$3,692.42</td>
+                        <td>281$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c4fd902af598bc45e6139" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$3,875.31</td>
+                        <td>294$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c50fd8faeefe23a3c5048" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$4,534.76</td>
+                        <td>353$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c51458faeefe23a3c5049" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$4,753.24</td>
+                        <td>373$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c52a55b52595ddb414d4d" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$5,034.90</td>
+                        <td>419$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c53103bfada82a6e9e259" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$5,265.21</td>
+                        <td>431$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c53543bfada82a6e9e25a" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$5,327.96</td>
+                        <td>442$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c538e3bfada82a6e9e25b" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$5,429.01</td>
+                        <td>464$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c53ed3bfada82a6e9e25c" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$5,596.98</td>
+                        <td>484$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c56163bfada82a6e9e260" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$5,730.65</td>
+                        <td>501$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c56633bfada82a6e9e261" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -huntington</td>
+                        <td>$5,929.39</td>
+                        <td>534$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c578ed223b5d518032b3e" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$6,287.97</td>
+                        <td>561$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c583ed223b5d518032b40" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$6,347.67</td>
+                        <td>572$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c58bfd223b5d518032b41" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$6,596.41</td>
+                        <td>654$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c596ad223b5d518032b42" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$6,695.93</td>
+                        <td>663$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c59f61082bb802ded9dc9" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$6,961.19</td>
+                        <td>681$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c5b381082bb802ded9dcc" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$6,999.24</td>
+                        <td>690$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c5c821082bb802ded9dce" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$7,184.32</td>
+                        <td>699$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c5cd81082bb802ded9dcf" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$7,223.98</td>
+                        <td>724$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c5d351082bb802ded9dd0" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$7,247.81</td>
+                        <td>727$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c5db9cf7c7effaa6e9999" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$7,462.14</td>
+                        <td>738$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c5e2dcf7c7effaa6e999a" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$7,639.54</td>
+                        <td>754$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c5f1402cbc4422687bc82" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$7,697.17</td>
+                        <td>759$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c604c02cbc4422687bc84" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$7,737.68</td>
+                        <td>767$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c613702cbc4422687bc85" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr class='active'>
+                        <td>Paypal</td>
+
+                        <td>email access -Dissabled 2FA
+                            ,Come with cookies -chase</td>
+                        <td>$8,215.94</td>
+                        <td>791$</td>
+                        <td><label class=" badge  blink_me">Available</label></td>
+                        <td>
+                            <form action='payment.html' role='form'>
+                                <input type='hidden' value="5e9c613c02cbc4422687bc86" name='id' />
+                                <button type='submit' class='btn btn-sm btn-success'><a href="/livecc/cart.php"
+                                        style="color: white;">Buy Now</a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </table>
+    </div>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('.menu-btn').click(function () {
+                ('.nav-list').addClass('active')
+            })
+
+        })
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
